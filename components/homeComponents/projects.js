@@ -39,7 +39,7 @@ export const Projects = () => {
         My work...
       </h4>
       <p className="font-roboto text-turquoise text-sm mt-2 mb-4">
-        Below you will find plenty of examples of work I've done, including
+        Below you will find plenty of examples of work I&apos;ve done, including
         websites and social media content.
       </p>
       <div className="flex flex-row justify-between">
