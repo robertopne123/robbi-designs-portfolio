@@ -74,6 +74,7 @@ export const Project = (props) => {
       <div className="bg-turquoise absolute right-0 top-0 justify-center flex flex-row gap-1 px-4 py-2 rounded-bl-xl rounded-tr-lg">
         {props.builtWith.map((tool) => (
           <img
+            key={tool}
             src={tool}
             className="w-[20px] h-[20px] object-contain pl-1"
           ></img>

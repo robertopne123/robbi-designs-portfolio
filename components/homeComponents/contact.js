@@ -22,7 +22,8 @@ export const Contact = () => {
         <input type="hidden" name="form-name" value="inquiryForm" />
         <p className="hidden">
           <label>
-            Don't fill this out if you're human: <input name="bot-field" />
+            Don&apos;t fill this out if you&apos;re human:{" "}
+            <input name="bot-field" />
           </label>
         </p>
         <div className="grid grid-cols-6 gap-4">
