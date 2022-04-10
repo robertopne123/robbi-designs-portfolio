@@ -57,40 +57,51 @@ export const ProjectViewer = () => {
           bgColour="#E14985"
           textColour="white"
           image="/projectCards/gigawaffle.png"
-          projectType="Web Design"
-          projectPurpose="Agency Website"
+          projectType="Branding"
+          projectPurpose="Complete company rebrand"
+          title="Gigawaffle"
+          logo="/projectLogos/gigawaffle.png"
           builtWith={builtWith0}
           link="https://gigawaffle.co.uk"
+          ig="gigawaffleuk"
         />
         <Project
           id="project1"
           bgColour="#1D1D1D"
           textColour="white"
-          image="/projectCards/gwtiktok.png"
-          projectType="Social Content"
-          projectPurpose="Team Tiktok Video"
+          image="/projectCards/delticbusinesssolutions.png"
+          projectType="Branding"
+          projectPurpose="New business branding"
+          title="Deltic Business Solutions"
+          logo="/projectLogos/delticicon.png"
           builtWith={builtWith1}
-          link="/"
+          link="https://delticbusiness.co.uk"
+          ig="delticbusiness"
         />
         <Project
           id="project2"
-          bgColour="#3B8083"
-          textColour="white"
-          image="/projectCards/swapmyenergy.png"
-          projectType="Web Design"
-          projectPurpose="Energy Broker Website"
+          bgColour="#ffffff"
+          textColour="black"
+          image="/projectCards/wraptorcustoms.png"
+          projectType="Branding"
+          projectPurpose="Partial company rebranding"
+          title="Wraptor Customs"
+          logo="/projectLogos/wraptor.png"
+          ig="wraptor_customs_tuning_wraps"
           builtWith={builtWith2}
-          link="https://swapmyenergy.co.uk"
+          link="/"
         />
         <Project
           id="project3"
           bgColour="#ffffff"
           textColour="black"
-          image="/projectCards/gigawaffle50offpromo.png"
+          image="/projectCards/swapmyenergy.png"
           projectType="Social Content"
-          projectPurpose="50% off promo"
+          projectPurpose="Partial company rebranding"
+          logo="/projectLogos/switch.svg"
+          title="Swap My Energy"
           builtWith={builtWith3}
-          link="/"
+          link="https://swapmyenergy.co.uk"
         />
         <Project
           id="project4"

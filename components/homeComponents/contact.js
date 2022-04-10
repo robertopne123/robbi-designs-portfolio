@@ -87,7 +87,7 @@ export const Contact = () => {
       <div className="h-[60px] p-1 rounded-full w-full bg-white mt-8 flex flex-row gap-2">
         <div className="h-[52px] relative">
           <img
-            src="https://media-exp1.licdn.com/dms/image/C4E03AQFmCRsTEM5OFg/profile-displayphoto-shrink_200_200/0/1636041167005?e=1651708800&v=beta&t=0hDV2LQUaV0FH1fxDRV1RYTH4DtY_9XLYiAE0BmiSWo"
+            src="https://media-exp1.licdn.com/dms/image/C5603AQGIgP_sIh9qxA/profile-displayphoto-shrink_200_200/0/1648736691122?e=1655337600&v=beta&t=IjoZIOeYUrcJlsRlpPUmYHyfitIHEegMOhvWJTZxB44"
             className="rounded-full h-[52px]"
           ></img>
           <div className="absolute bottom-0 right-0 bg-turquoise rounded-full">

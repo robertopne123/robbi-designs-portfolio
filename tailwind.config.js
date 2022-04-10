@@ -13,8 +13,8 @@ module.exports = {
         offWhite: "#F5F5F5",
       },
       fontFamily: {
-        roboto: "Roboto",
-        poppins: "Poppins",
+        roboto: ["Roboto", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       fontSize: {
         "2xs": "10px",

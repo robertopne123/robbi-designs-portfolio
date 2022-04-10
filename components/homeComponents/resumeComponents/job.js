@@ -14,7 +14,7 @@ export const Job = (props) => {
           src={props.companyLogo}
           width="40px"
           height="40px"
-          className="w-[40px] h-[40px]"
+          className="w-[40px] h-[40px] rounded-full"
         ></img>
         <div className="flex flex-col w-full gap-2">
           <div className="flex flex-row gap-2 justify-between w-full">

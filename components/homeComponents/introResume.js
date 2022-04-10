@@ -17,6 +17,7 @@ export const IntroResume = () => {
 
   const contentSkills = [
     ["Photoshop", "/skillIcons/photoshop.png"],
+    ["Illustrator", "/skillIcons/illustrator.png"],
     ["Figma", "/skillIcons/figma.png"],
     ["Canva", "/skillIcons/canva.png"],
     ["After Effects", "/skillIcons/aftereffects.png"],
@@ -38,10 +39,10 @@ export const IntroResume = () => {
       </h4>
       <p className="font-roboto text-white text-sm mt-2 mb-4">
         I’m Robbi, a passionate person, who loves music, photography and
-        anything creative. After originally finding a love for coding, I
+        anything creative. After originally falling out of love for coding, I
         realised that being creative was the direction that I wanted to go in. I
-        now create visual experiences, whether thats in web design, social media
-        content and/or more.
+        now create brand experiences, across social media's, websites and
+        physical products.
       </p>
       <p className="bg-white px-1 text-turquoise text-sm uppercase font-poppins font-light inline">
         experience
@@ -49,11 +50,18 @@ export const IntroResume = () => {
       <div className="h-px w-full px-4 bg-gray-300 mt-2"></div>
       <div className="mb-4">
         <Job
-          companyLogo="/resumeLogos/gigawaffle_logo.png"
+          companyLogo="/resumeLogos/gigawaffle_logo.jpg"
           role="Marketing and Development Manager"
           companyName="Gigawaffle"
-          startDate="Apr 2021"
+          startDate="Sep 2021"
           endDate="Present"
+        />
+        <Job
+          companyLogo="/resumeLogos/gigawaffle_logo.jpg"
+          role="Digital Marketing and Branding Assistant"
+          companyName="Gigawaffle"
+          startDate="Apr 2021"
+          endDate="Sep 2021"
         />
         <Job
           companyLogo="/resumeLogos/robbi_designs_logo.png"
@@ -109,7 +117,7 @@ export const IntroResume = () => {
       <div className="h-px w-full px-4 bg-gray-300 mt-2"></div>
       <SkillsList skillsCategory="Web Design Skills" skills={webSkills} />
       <SkillsList
-        skillsCategory="Content Creation Skills"
+        skillsCategory="Content & Branding Skills"
         skills={contentSkills}
       />
       <SkillsList
