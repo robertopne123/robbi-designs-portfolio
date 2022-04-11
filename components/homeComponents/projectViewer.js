@@ -103,20 +103,9 @@ export const ProjectViewer = () => {
           builtWith={builtWith3}
           link="https://swapmyenergy.co.uk"
         />
-        <Project
-          id="project4"
-          bgColour="#03989E"
-          textColour="white"
-          image="/projectCards/weredigital.png"
-          projectType="Web Design"
-          projectPurpose="Agency Website"
-          builtWith={builtWith0}
-          link="https://weredigital.co"
-        />
       </div>
       <div className="flex flex-row mx-auto gap-0.5 w-[83px] mt-2">
         <div className="dots w-[15px] h-[15px] bg-turquoise border-2 border-turquoise rounded-full"></div>
-        <div className="dots w-[15px] h-[15px] border-2 border-turquoise rounded-full"></div>
         <div className="dots w-[15px] h-[15px] border-2 border-turquoise rounded-full"></div>
         <div className="dots w-[15px] h-[15px] border-2 border-turquoise rounded-full"></div>
         <div className="dots w-[15px] h-[15px] border-2 border-turquoise rounded-full"></div>
