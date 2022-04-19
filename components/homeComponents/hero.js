@@ -6,8 +6,8 @@ export const Hero = () => {
         I’M ROBBI
       </h3>
       <p className="font-roboto text-turquoise text-sm w-3/4 mt-2 px-4">
-        I’m a visual designer, with experience in front-end development and
-        digital marketing.
+        I’m a visual branding designer, with experience in front-end design and
+        development and digital marketing.
       </p>
       <img
         src="/robbi.png"

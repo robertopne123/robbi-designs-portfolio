@@ -66,7 +66,7 @@ export const Nav = () => {
           </div>
         </div>
         <div
-          className={`h-screen w-full absolute right-0 top-0 z-50 ${
+          className={`h-screen w-full right-0 top-0 z-50 fixed ${
             menuVisible ? "flex" : "hidden"
           }`}
         >
