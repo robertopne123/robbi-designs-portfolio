@@ -42,7 +42,7 @@ export const IntroResume = () => {
         I’m Robbi, a passionate person, who loves music, photography and
         anything creative. After originally falling out of love for coding, I
         realised that being creative was the direction that I wanted to go in. I
-        now create brand experiences, across social media's, websites and
+        now create brand experiences, across social media&apos;s, websites and
         physical products.
       </p>
       <p className="bg-white px-1 text-turquoise text-sm uppercase font-poppins font-light inline">
