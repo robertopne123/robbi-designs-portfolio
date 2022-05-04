@@ -84,7 +84,8 @@ export const Project = (props) => {
   return (
     <div
       ref={projectRef}
-      className={`project snap-center bg-[${props.bgColour}] h-full min-w-full relative rounded-xl p-4 border-2 overflow-clip border-gray-300`}
+      key={props.index}
+      className={`project snap-center bg-[${props.bgColour}] h-[450px] min-w-full relative rounded-xl p-4 border-2 overflow-clip border-gray-300`}
     >
       <img
         src={props.image}

@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Hero } from "../components/homeComponents/hero";
 import { ResumeSection } from "../components/homeComponents/resume";
 import { Nav } from "../components/nav";
-import { Projects } from "../components/homeComponents/projects";
 import { Contact } from "../components/homeComponents/contact";
 import { Footer } from "../components/homeComponents/footer";
 import styles from "../styles/Home.module.css";

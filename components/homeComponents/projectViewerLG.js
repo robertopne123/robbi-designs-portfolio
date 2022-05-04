@@ -1,7 +1,11 @@
 import { useEffect } from "react";
+import { useState } from "react";
+import { FilterItem } from "../projectComponents/filterItem";
 import { Project } from "./project";
+import { GetAllData, GetByCategory } from "../../data/projects";
 
 export const ProjectViewerLG = () => {
+  const [filterByCategory, setFilterByCategory] = useState("All");
   let elementsCol = "";
 
   const builtWith0 = [
@@ -19,11 +23,57 @@ export const ProjectViewerLG = () => {
   ];
   const builtWith3 = ["/skillIcons/figma.png", "/skillIcons/canva.png"];
 
+  const changeCategory = (filterValue) => {
+    setFilterByCategory(filterValue.title);
+  };
+
   return (
     <div className="flex flex-col justify-end px-4 py-8">
       <h4 className="font-roboto font-bold text-turquoise text-2xl pb-4">
         Projects
       </h4>
+      <div className="flex flex-col">
+        <div className="flex flex-row justify-end gap-2 w-full mb-4 px-4">
+          <p className="font-roboto text-turquoise text-sm uppercase">Filter</p>
+          <img src="/filter.svg" className="h-[20px]"></img>
+        </div>
+        <div className="flex flex-col">
+          <p className="font-roboto text-turquoise text-sm uppercase">
+            Filter By Category
+          </p>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <FilterItem
+              title="All"
+              name="filterByCategory"
+              id="all"
+              value="all"
+              checked
+              changeCategory={changeCategory}
+            />
+            <FilterItem
+              title="Branding"
+              name="filterByCategory"
+              id="branding"
+              value="branding"
+              changeCategory={changeCategory}
+            />
+            <FilterItem
+              title="Web Design"
+              name="filterByCategory"
+              id="webdesign"
+              value="webdesign"
+              changeCategory={changeCategory}
+            />
+            <FilterItem
+              title="Social Media"
+              name="filterByCategory"
+              id="socialmedia"
+              value="socialmedia"
+              changeCategory={changeCategory}
+            />
+          </div>
+        </div>
+      </div>
       {/* <div className="bg-gray-300 flex flex-row h-[40px] w-full mb-4 rounded-full">
         <input
           type="text"
@@ -58,60 +108,22 @@ export const ProjectViewerLG = () => {
         <option className="">Social Media</option>
         <option className="">Other</option>
       </select> */}
-      <div className="w-full grid grid-rows-6 gap-4">
-        <div className="h-[450px] w-full">
+      <div className="w-full flex flex-col gap-4">
+        {GetByCategory(filterByCategory).map((project, index) => (
           <Project
-            id="project0"
-            bgColour="#E14985"
-            textColour="white"
-            image="/projectCards/gigawaffle.png"
-            projectType="Branding"
-            projectPurpose="Complete company rebrand"
-            title="Gigawaffle"
-            logo="/projectLogos/gigawaffle.png"
-            builtWith={builtWith0}
-            link="https://gigawaffle.co.uk"
-            ig="gigawaffleuk"
+            index={index}
+            id={project.id}
+            bgColour={project.bgColour}
+            textColour={project.textColour}
+            image={project.image}
+            projectType={project.projectType}
+            projectPurpose={project.projectPurpose}
+            title={project.title}
+            logo={project.logo}
+            link={project.link}
+            ig={project.ig}
           />
-        </div>
-        <Project
-          id="project1"
-          bgColour="#1D1D1D"
-          textColour="white"
-          image="/projectCards/delticbusinesssolutions.png"
-          projectType="Branding"
-          projectPurpose="New business branding"
-          title="Deltic Business Solutions"
-          logo="/projectLogos/delticicon.png"
-          builtWith={builtWith1}
-          link="https://delticbusiness.co.uk"
-          ig="delticbusiness"
-        />
-        <Project
-          id="project2"
-          bgColour="#ffffff"
-          textColour="black"
-          image="/projectCards/wraptorcustoms.png"
-          projectType="Branding"
-          projectPurpose="Partial company rebranding"
-          title="Wraptor Customs"
-          logo="/projectLogos/wraptor.png"
-          ig="wraptor_customs_tuning_wraps"
-          builtWith={builtWith2}
-          link="/"
-        />
-        <Project
-          id="project3"
-          bgColour="#ffffff"
-          textColour="black"
-          image="/projectCards/swapmyenergy.png"
-          projectType="Social Content"
-          projectPurpose="Partial company rebranding"
-          logo="/projectLogos/switch.svg"
-          title="Swap My Energy"
-          builtWith={builtWith3}
-          link="https://swapmyenergy.co.uk"
-        />
+        ))}
       </div>
     </div>
   );
