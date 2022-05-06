@@ -50,8 +50,8 @@ export const ProjectViewer = () => {
   const builtWith3 = ["/skillIcons/figma.png", "/skillIcons/canva.png"];
 
   return (
-    <div className="h-[500px] flex flex-col justify-end">
-      <div className="h-[450px] w-full flex flex-row gap-4 overflow-x-scroll overflow-y-visible snap-x snap-mandatory">
+    <div className="h-[500px] md:h-[450px] flex flex-col justify-end">
+      <div className="h-[450px] md:h-auto w-full flex flex-row md:grid lg:grid-cols-3 md:grid-cols-2 gap-4 overflow-x-scroll md:overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
         <Project
           id="project0"
           bgColour="#E14985"
@@ -104,7 +104,7 @@ export const ProjectViewer = () => {
           link="https://swapmyenergy.co.uk"
         />
       </div>
-      <div className="flex flex-row mx-auto gap-0.5 w-[83px] mt-2">
+      <div className="flex flex-row mx-auto gap-0.5 w-[83px] mt-2 md:hidden">
         <div className="dots w-[15px] h-[15px] bg-turquoise border-2 border-turquoise rounded-full"></div>
         <div className="dots w-[15px] h-[15px] border-2 border-turquoise rounded-full"></div>
         <div className="dots w-[15px] h-[15px] border-2 border-turquoise rounded-full"></div>

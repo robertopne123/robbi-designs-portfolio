@@ -2,6 +2,7 @@ import { Project } from "./project";
 import { ProjectViewer } from "./projectViewer";
 import { Job } from "./resumeComponents/job";
 import { SkillsList } from "./resumeComponents/skillsList";
+import Link from "next/link";
 
 export const Projects = () => {
   const webSkills = [
@@ -35,25 +36,30 @@ export const Projects = () => {
 
   return (
     <div className="bg-gray-100 w-full px-4 py-8">
-      <h4 className="font-roboto font-bold text-turquoise text-2xl">
-        My work...
-      </h4>
-      <p className="font-roboto text-turquoise text-sm mt-2 mb-4">
-        Below you will find plenty of examples of work I&apos;ve done, including
-        branding, websites and social media content.
-      </p>
-      <div className="flex flex-row justify-between">
-        <p className="bg-turquoise px-1 text-white text-sm uppercase font-poppins font-light inline">
-          projects
+      <div className="max-w-[1250px] mx-auto">
+        <h4 className="font-roboto font-bold text-turquoise text-2xl">
+          My work...
+        </h4>
+        <p className="font-roboto text-turquoise text-sm mt-2 mb-4">
+          Below you will find plenty of examples of work I&apos;ve done,
+          including branding, websites and social media content.
         </p>
-        <p className="bg-turquoise px-1 text-white text-md leading-[1.25rem] uppercase font-poppins font-light inline">
-          see more
-        </p>
-      </div>
-      <div className="h-px w-full px-4 bg-gray-300 mt-2 mb-4"></div>
-      <ProjectViewer />
+        <div className="flex flex-row justify-between">
+          <p className="bg-turquoise px-1 text-white text-sm uppercase font-poppins font-light inline">
+            projects
+          </p>
+          <Link href="/projects">
+            <a>
+              <p className="bg-turquoise px-1 text-white text-md leading-[1.25rem] uppercase font-poppins font-light inline">
+                see more
+              </p>
+            </a>
+          </Link>
+        </div>
+        <div className="h-px w-full px-4 bg-gray-300 mt-2 mb-4"></div>
+        <ProjectViewer />
 
-      {/* <div className="flex flex-col gap-4">
+        {/* <div className="flex flex-col gap-4">
         <div className="bg-[#E14985] w-full h-[200px] rounded-xl relative shadow-xl">
           <img
             src="/projectCards/gigawaffle.png"
@@ -117,6 +123,7 @@ export const Projects = () => {
           </div>
         </div>
       </div> */}
+      </div>
     </div>
   );
 };

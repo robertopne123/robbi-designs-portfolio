@@ -35,69 +35,71 @@ export const IntroResume = () => {
 
   return (
     <div className="bg-turquoise w-full px-4 py-8">
-      <h4 className="font-roboto font-bold text-white text-2xl">
-        I’d like to introduce myself...
-      </h4>
-      <p className="font-roboto text-white text-sm mt-2 mb-4">
-        I’m Robbi, a passionate person, who loves music, photography and
-        anything creative. After originally falling out of love for coding, I
-        realised that being creative was the direction that I wanted to go in. I
-        now create brand experiences, across social media&apos;s, websites and
-        physical products.
-      </p>
-      <p className="bg-white px-1 text-turquoise text-sm uppercase font-poppins font-light inline">
-        experience
-      </p>
-      <div className="h-px w-full px-4 bg-gray-300 mt-2"></div>
-      <div className="mb-4">
-        <Job
-          companyLogo="/resumeLogos/gigawaffle_logo.jpg"
-          role="Marketing and Development Manager"
-          companyName="Gigawaffle"
-          startDate="Sep 2021"
-          endDate="Present"
-        />
-        <Job
-          companyLogo="/resumeLogos/gigawaffle_logo.jpg"
-          role="Digital Marketing and Branding Assistant"
-          companyName="Gigawaffle"
-          startDate="Apr 2021"
-          endDate="Sep 2021"
-        />
-        <Job
-          companyLogo="/resumeLogos/robbi_designs_logo.png"
-          role="Freelance Designer"
-          companyName="Robbi Designs"
-          startDate="Feb 2020"
-          endDate="Apr 2021"
-          jobDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis arcu ut dui scelerisque efficitur. Ut eget nisl vitae nibh congue accumsan. Aenean sodales urna vulputate ullamcorper varius. Praesent et mattis quam, eu hendrerit libero. Phasellus fringilla finibus nisl, ut convallis urna efficitur vitae. Praesent sollicitudin elementum sodales. Fusce vel lacinia est. Sed mattis ex vitae ante fringilla, nec imperdiet nisi pharetra. Proin et diam ac nibh scelerisque eleifend et sit amet felis. Maecenas interdum porttitor pretium. Pellentesque posuere nisl vel venenatis maximus. Fusce quis tincidunt mauris. Etiam risus nisi, porttitor id arcu ac, commodo egestas eros."
-        />
-        <Job
-          companyLogo="/resumeLogos/motivate_logo.png"
-          role="Graphics Designer"
-          companyName="Motivate Canvas"
-          startDate="Sep 2019"
-          endDate="Jan 2020"
-          jobDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis arcu ut dui scelerisque efficitur. Ut eget nisl vitae nibh congue accumsan. Aenean sodales urna vulputate ullamcorper varius. Praesent et mattis quam, eu hendrerit libero. Phasellus fringilla finibus nisl, ut convallis urna efficitur vitae. Praesent sollicitudin elementum sodales. Fusce vel lacinia est. Sed mattis ex vitae ante fringilla, nec imperdiet nisi pharetra. Proin et diam ac nibh scelerisque eleifend et sit amet felis. Maecenas interdum porttitor pretium. Pellentesque posuere nisl vel venenatis maximus. Fusce quis tincidunt mauris. Etiam risus nisi, porttitor id arcu ac, commodo egestas eros."
-        />
-        <Job
-          companyLogo="/resumeLogos/ftf_logo.png"
-          role="Video Producer"
-          companyName="From The Finney"
-          startDate="Aug 2019"
-          endDate="Jan 2020"
-          jobDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis arcu ut dui scelerisque efficitur. Ut eget nisl vitae nibh congue accumsan. Aenean sodales urna vulputate ullamcorper varius. Praesent et mattis quam, eu hendrerit libero. Phasellus fringilla finibus nisl, ut convallis urna efficitur vitae. Praesent sollicitudin elementum sodales. Fusce vel lacinia est. Sed mattis ex vitae ante fringilla, nec imperdiet nisi pharetra. Proin et diam ac nibh scelerisque eleifend et sit amet felis. Maecenas interdum porttitor pretium. Pellentesque posuere nisl vel venenatis maximus. Fusce quis tincidunt mauris. Etiam risus nisi, porttitor id arcu ac, commodo egestas eros."
-        />
+      <div className="max-w-[1250px] mx-auto">
+        <h4 className="font-roboto font-bold text-white text-2xl">
+          I’d like to introduce myself...
+        </h4>
+        <p className="font-roboto text-white text-sm mt-2 mb-4">
+          I’m Robbi, a passionate person, who loves music, photography and
+          anything creative. After originally falling out of love for coding, I
+          realised that being creative was the direction that I wanted to go in.
+          I now create brand experiences, across social media&apos;s, websites
+          and physical products.
+        </p>
+        <p className="bg-white px-1 text-turquoise text-sm uppercase font-poppins font-light inline">
+          experience
+        </p>
+        <div className="h-px w-full px-4 bg-gray-300 mt-2"></div>
+        <div className="mb-4">
+          <Job
+            companyLogo="/resumeLogos/gigawaffle_logo.jpg"
+            role="Marketing and Development Manager"
+            companyName="Gigawaffle"
+            startDate="Sep 2021"
+            endDate="Present"
+          />
+          <Job
+            companyLogo="/resumeLogos/gigawaffle_logo.jpg"
+            role="Digital Marketing and Branding Assistant"
+            companyName="Gigawaffle"
+            startDate="Apr 2021"
+            endDate="Sep 2021"
+          />
+          <Job
+            companyLogo="/resumeLogos/robbi_designs_logo.png"
+            role="Freelance Designer"
+            companyName="Robbi Designs"
+            startDate="Feb 2020"
+            endDate="Apr 2021"
+            jobDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis arcu ut dui scelerisque efficitur. Ut eget nisl vitae nibh congue accumsan. Aenean sodales urna vulputate ullamcorper varius. Praesent et mattis quam, eu hendrerit libero. Phasellus fringilla finibus nisl, ut convallis urna efficitur vitae. Praesent sollicitudin elementum sodales. Fusce vel lacinia est. Sed mattis ex vitae ante fringilla, nec imperdiet nisi pharetra. Proin et diam ac nibh scelerisque eleifend et sit amet felis. Maecenas interdum porttitor pretium. Pellentesque posuere nisl vel venenatis maximus. Fusce quis tincidunt mauris. Etiam risus nisi, porttitor id arcu ac, commodo egestas eros."
+          />
+          <Job
+            companyLogo="/resumeLogos/motivate_logo.png"
+            role="Graphics Designer"
+            companyName="Motivate Canvas"
+            startDate="Sep 2019"
+            endDate="Jan 2020"
+            jobDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis arcu ut dui scelerisque efficitur. Ut eget nisl vitae nibh congue accumsan. Aenean sodales urna vulputate ullamcorper varius. Praesent et mattis quam, eu hendrerit libero. Phasellus fringilla finibus nisl, ut convallis urna efficitur vitae. Praesent sollicitudin elementum sodales. Fusce vel lacinia est. Sed mattis ex vitae ante fringilla, nec imperdiet nisi pharetra. Proin et diam ac nibh scelerisque eleifend et sit amet felis. Maecenas interdum porttitor pretium. Pellentesque posuere nisl vel venenatis maximus. Fusce quis tincidunt mauris. Etiam risus nisi, porttitor id arcu ac, commodo egestas eros."
+          />
+          <Job
+            companyLogo="/resumeLogos/ftf_logo.png"
+            role="Video Producer"
+            companyName="From The Finney"
+            startDate="Aug 2019"
+            endDate="Jan 2020"
+            jobDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis arcu ut dui scelerisque efficitur. Ut eget nisl vitae nibh congue accumsan. Aenean sodales urna vulputate ullamcorper varius. Praesent et mattis quam, eu hendrerit libero. Phasellus fringilla finibus nisl, ut convallis urna efficitur vitae. Praesent sollicitudin elementum sodales. Fusce vel lacinia est. Sed mattis ex vitae ante fringilla, nec imperdiet nisi pharetra. Proin et diam ac nibh scelerisque eleifend et sit amet felis. Maecenas interdum porttitor pretium. Pellentesque posuere nisl vel venenatis maximus. Fusce quis tincidunt mauris. Etiam risus nisi, porttitor id arcu ac, commodo egestas eros."
+          />
+        </div>
+        <Link href="/resume">
+          <a>
+            <div className="bg-white w-[150px] mx-auto h-[50px] mt-8 flex flex-col justify-center">
+              <p className="font-poppins text-turquoise text-sm text-center">
+                View Resume
+              </p>
+            </div>
+          </a>
+        </Link>
       </div>
-      <Link href="/resume">
-        <a>
-          <div className="bg-white w-[150px] mx-auto h-[50px] mt-8 flex flex-col justify-center">
-            <p className="font-poppins text-turquoise text-sm text-center">
-              View Resume
-            </p>
-          </div>
-        </a>
-      </Link>
     </div>
   );
 };
