@@ -70,8 +70,8 @@ export const Nav = () => {
             menuVisible ? "flex" : "hidden"
           }`}
         >
-          <div className="bg-black/50 h-full w-1/3"></div>
-          <div className="h-full w-2/3 bg-turquoise ml-auto py-5 px-4 flex flex-col">
+          <div className="bg-black/50 h-full w-1/3 md:w-3/4"></div>
+          <div className="h-full w-2/3 md:w-1/4 bg-turquoise ml-auto py-5 px-4 flex flex-col">
             <div className="flex flex-row justify-end h-[60px]">
               <svg
                 width="19"

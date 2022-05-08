@@ -82,27 +82,32 @@ export const Project = (props) => {
   }, []);
 
   return (
-    <div
-      ref={projectRef}
-      key={props.index}
-      className={`project snap-center bg-[${props.bgColour}] h-[450px] min-w-full relative rounded-xl p-4 border-2 overflow-clip border-gray-300`}
-    >
-      <img
-        src={props.image}
-        className="absolute left-0 top-0 w-full h-full object-cover"
-      ></img>
-      <div className="bg-white absolute left-0 top-0 justify-center flex flex-row gap-1 px-4 py-2 rounded-br-lg">
-        <img src={props.logo} className="w-[20px] h-[20px] object-contain" />
-      </div>
-      <div className="bg-turquoise absolute right-0 bottom-0 justify-center flex flex-col gap-1 px-4 py-2 rounded-br-lg rounded-tl-lg">
-        <p className="font-roboto text-white text-sm font-bold text-right">
-          {props.title}
-        </p>
-        <p className="font-roboto text-white text-xs text-right">
-          {props.projectPurpose}
-        </p>
-      </div>
-      {/* <div className="bg-turquoise absolute right-0 top-0 justify-center flex flex-row gap-1 px-4 py-2 rounded-bl-xl rounded-tr-lg">
+    <Link href={props.readMoreLink}>
+      <a>
+        <div
+          ref={projectRef}
+          key={props.index}
+          className={`project snap-center bg-[${props.bgColour}] h-[450px] min-w-full relative rounded-xl p-4 border-2 overflow-clip border-gray-300`}
+        >
+          <img
+            src={props.image}
+            className="absolute left-0 top-0 w-full h-full object-cover"
+          ></img>
+          <div className="bg-white absolute left-0 top-0 justify-center flex flex-row gap-1 px-4 py-2 rounded-br-lg">
+            <img
+              src={props.logo}
+              className="w-[20px] h-[20px] object-contain"
+            />
+          </div>
+          <div className="bg-turquoise absolute right-0 bottom-0 justify-center flex flex-col gap-1 px-4 py-2 rounded-br-lg rounded-tl-lg">
+            <p className="font-roboto text-white text-sm font-bold text-right">
+              {props.title}
+            </p>
+            <p className="font-roboto text-white text-xs text-right">
+              {props.projectPurpose}
+            </p>
+          </div>
+          {/* <div className="bg-turquoise absolute right-0 top-0 justify-center flex flex-row gap-1 px-4 py-2 rounded-bl-xl rounded-tr-lg">
         {props.builtWith.map((tool) => (
           <img
             key={tool}
@@ -112,70 +117,45 @@ export const Project = (props) => {
         ))}
       </div> */}
 
-      <div
-        className={`absolute flex flex-col left-0 bottom-0 gap-4 px-4 py-4 
+          <div
+            className={`absolute flex flex-col left-0 bottom-0 gap-4 px-4 py-4 
         }`}
-      >
-        <div className="flex flex-row gap-4">
-          <div
-            className="bg-gray-800 w-[30px] h-[30px] rounded-full z-20 cursor-pointer showMoreExtras hidden"
-            onClick={() => topLinkClick(props.ig, props.link)}
           >
-            <div className="h-full w-full flex flex-col justify-center">
-              <img
-                src="/web.png"
-                className={`w-[15px] object-contain mx-auto ${
-                  props.link == "/" ? "hidden" : "flex"
+            <div className="flex flex-col gap-4">
+              <div
+                className="bg-gray-800 w-[30px] h-[30px] rounded-full z-20 cursor-pointer showMoreExtras"
+                onClick={() => topLinkClick(props.ig, props.link)}
+              >
+                <div className="h-full w-full flex flex-col justify-center">
+                  <img
+                    src="/web.png"
+                    className={`w-[15px] object-contain mx-auto ${
+                      props.link == "/" ? "hidden" : "flex"
+                    }`}
+                  ></img>
+                  <img
+                    src="/ig.png"
+                    className={`w-[15px] object-contain mx-auto ${
+                      props.link == "/" ? "flex" : "hidden"
+                    }`}
+                  ></img>
+                </div>
+              </div>
+              <div
+                className={`bg-gray-800 w-[30px] h-[30px] rounded-full z-20 cursor-pointer showMoreExtras ${
+                  props.link == "/" ? "hidden opacity-0" : "flex"
                 }`}
-              ></img>
-              <img
-                src="/ig.png"
-                className={`w-[15px] object-contain mx-auto ${
-                  props.link == "/" ? "flex" : "hidden"
-                }`}
-              ></img>
+                onClick={() => igLink(props.ig)}
+              >
+                <div className="h-full w-full flex flex-col justify-center">
+                  <img
+                    src="/ig.png"
+                    className="w-[15px] object-contain mx-auto"
+                  ></img>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            className={`bg-gray-800 w-[30px] h-[30px] rounded-full z-20 cursor-pointer -translate-x-3 translate-y-3 showMoreExtras hidden ${
-              props.link == "/" ? "hidden opacity-0" : "flex"
-            }`}
-            onClick={() => igLink(props.ig)}
-          >
-            <div className="h-full w-full flex flex-col justify-center">
-              <img
-                src="/ig.png"
-                className="w-[15px] object-contain mx-auto"
-              ></img>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-row gap-4">
-          <div
-            className="bg-gray-800 w-[30px] h-[30px] rounded-full mx-auto z-20 cursor-pointer"
-            id="showMore"
-            onClick={() => showMore()}
-          >
-            <div className="h-full w-full flex flex-col justify-center">
-              <img
-                src="/dots.png"
-                className="w-[15px] object-contain mx-auto"
-              ></img>
-            </div>
-          </div>
-          <div
-            className="bg-gray-800 w-[30px] h-[30px] rounded-full mx-auto z-20 cursor-pointer showMoreExtras hidden"
-            //onClick={() => copyToClipboard(props.link)}
-          >
-            <div className="h-full w-full flex flex-col justify-center">
-              <img
-                src="/readmore.png"
-                className="w-[15px] object-contain mx-auto"
-              ></img>
-            </div>
-          </div>
-        </div>
-        {/* <div className="hidden flex-col justify-center group-hover:flex">
+            {/* <div className="hidden flex-col justify-center group-hover:flex">
           <div className="bg-gray-700 h-[25px] pl-[34px] pr-4 -translate-x-[28px] rounded-r-full rounded-l-full">
             <Link href={props.link} passHref>
               <a>
@@ -186,7 +166,9 @@ export const Project = (props) => {
             </Link>
           </div>
         </div> */}
-      </div>
-    </div>
+          </div>
+        </div>
+      </a>
+    </Link>
   );
 };

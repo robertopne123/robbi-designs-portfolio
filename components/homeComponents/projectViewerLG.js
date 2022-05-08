@@ -6,6 +6,9 @@ import { GetAllData, GetByCategory } from "../../data/projects";
 
 export const ProjectViewerLG = () => {
   const [filterByCategory, setFilterByCategory] = useState("All");
+  const [filterMenuActive, setFilterMenuActive] = useState(false);
+  const [query, setQuery] = useState("");
+  const [data, setData] = useState([]);
   let elementsCol = "";
 
   const builtWith0 = [
@@ -27,54 +30,99 @@ export const ProjectViewerLG = () => {
     setFilterByCategory(filterValue.title);
   };
 
+  function getSearchResult(e) {
+    const query = e.target.value;
+    setQuery(query);
+  }
+
+  function createReadMoreLink(projectType, title) {
+    let lowerCase = title.toLowerCase();
+
+    let filtered = lowerCase.replace("'", "");
+
+    let underscore = filtered.split(" ").join("_");
+
+    let lowerCaseProject = projectType.toLowerCase();
+
+    let underscoreProject = lowerCaseProject.split(" ").join("_");
+
+    return "/" + underscoreProject + "/" + underscore;
+  }
+
   return (
     <div className="flex flex-col justify-end px-4 py-8">
-      <h4 className="font-roboto font-bold text-turquoise text-2xl pb-4">
-        Projects
-      </h4>
-      <div className="flex flex-col">
-        <div className="flex flex-row justify-end gap-2 w-full mb-4 px-4">
-          <p className="font-roboto text-turquoise text-sm uppercase">Filter</p>
-          <img src="/filter.svg" className="h-[20px]"></img>
-        </div>
+      <div className="max-w-[1250px] mx-auto w-[1250px]">
+        <h4 className="font-roboto font-bold text-turquoise text-2xl pb-4">
+          Projects
+        </h4>
         <div className="flex flex-col">
-          <p className="font-roboto text-turquoise text-sm uppercase">
-            Filter By Category
-          </p>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <FilterItem
-              title="All"
-              name="filterByCategory"
-              id="all"
-              value="all"
-              checked
-              changeCategory={changeCategory}
+          <div className="flex flex-row justify-end gap-2 w-full mb-4 px-4">
+            <input
+              placeholder="Search by project name"
+              className="bg-turquoise outline-none w-[300px] px-2 font-roboto text-white"
+              onChange={(e) => getSearchResult(e)}
             />
-            <FilterItem
-              title="Branding"
-              name="filterByCategory"
-              id="branding"
-              value="branding"
-              changeCategory={changeCategory}
-            />
-            <FilterItem
-              title="Web Design"
-              name="filterByCategory"
-              id="webdesign"
-              value="webdesign"
-              changeCategory={changeCategory}
-            />
-            <FilterItem
-              title="Social Media"
-              name="filterByCategory"
-              id="socialmedia"
-              value="socialmedia"
-              changeCategory={changeCategory}
-            />
+            <div
+              className={`group flex flex-row gap-2 cursor-pointer hover:bg-turquoise p-2 ${
+                filterMenuActive ? "bg-turquoise" : "bg-white"
+              }`}
+              onClick={() => {
+                setFilterMenuActive(!filterMenuActive);
+              }}
+            >
+              <p
+                className={`font-roboto group-hover:text-white text-sm uppercase ${
+                  filterMenuActive ? "text-white" : "text-turquoise"
+                }`}
+              >
+                Filter
+              </p>
+              <img
+                src="/filter.svg"
+                className={`h-[20px] group-hover:invert ${
+                  filterMenuActive ? "invert" : "invert-0"
+                }`}
+              ></img>
+            </div>
+          </div>
+          <div className={`flex-col ${filterMenuActive ? "flex" : "hidden"}`}>
+            <p className="font-roboto text-turquoise text-sm uppercase">
+              Filter By Category
+            </p>
+            <div className="grid grid-cols-2 gap-4 my-4">
+              <FilterItem
+                title="All"
+                name="filterByCategory"
+                id="all"
+                value="all"
+                checked
+                changeCategory={changeCategory}
+              />
+              <FilterItem
+                title="Branding"
+                name="filterByCategory"
+                id="branding"
+                value="branding"
+                changeCategory={changeCategory}
+              />
+              <FilterItem
+                title="Web Design"
+                name="filterByCategory"
+                id="webdesign"
+                value="webdesign"
+                changeCategory={changeCategory}
+              />
+              <FilterItem
+                title="Social Media"
+                name="filterByCategory"
+                id="socialmedia"
+                value="socialmedia"
+                changeCategory={changeCategory}
+              />
+            </div>
           </div>
         </div>
-      </div>
-      {/* <div className="bg-gray-300 flex flex-row h-[40px] w-full mb-4 rounded-full">
+        {/* <div className="bg-gray-300 flex flex-row h-[40px] w-full mb-4 rounded-full">
         <input
           type="text"
           id="search"
@@ -108,22 +156,28 @@ export const ProjectViewerLG = () => {
         <option className="">Social Media</option>
         <option className="">Other</option>
       </select> */}
-      <div className="w-full flex flex-col gap-4">
-        {GetByCategory(filterByCategory).map((project, index) => (
-          <Project
-            index={index}
-            id={project.id}
-            bgColour={project.bgColour}
-            textColour={project.textColour}
-            image={project.image}
-            projectType={project.projectType}
-            projectPurpose={project.projectPurpose}
-            title={project.title}
-            logo={project.logo}
-            link={project.link}
-            ig={project.ig}
-          />
-        ))}
+        <div className="w-full flex flex-col md:grid md:grid-cols-3 gap-4">
+          {GetByCategory(filterByCategory, query).map((project, index) => (
+            <Project
+              key={index}
+              index={index}
+              id={project.id}
+              bgColour={project.bgColour}
+              textColour={project.textColour}
+              image={project.image}
+              projectType={project.projectType}
+              projectPurpose={project.projectPurpose}
+              title={project.title}
+              logo={project.logo}
+              link={project.link}
+              readMoreLink={createReadMoreLink(
+                project.projectType,
+                project.title
+              )}
+              ig={project.ig}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

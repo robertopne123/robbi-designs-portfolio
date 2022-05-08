@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         turquoise: "#1D3E51",
         offWhite: "#F5F5F5",
+        orange: "#FF7D05",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
@@ -18,6 +19,10 @@ module.exports = {
       },
       fontSize: {
         "2xs": "10px",
+      },
+      screens: {
+        xs: { min: "0px", max: "337px" },
+        xs2: { min: "337px", max: "387px" },
       },
     },
   },

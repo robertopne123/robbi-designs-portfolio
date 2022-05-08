@@ -20,10 +20,12 @@ export const ProjectViewer = () => {
     const dots = document.getElementsByClassName("dots");
 
     for (let i = 0; i < elements.length; i++) {
-      if (isInViewport(elements[i])) {
-        dots[i].style.backgroundColor = "#1D3E51";
-      } else {
-        dots[i].style.backgroundColor = "transparent";
+      if (dots !== undefined) {
+        if (isInViewport(elements[i])) {
+          dots[i].style.backgroundColor = "#1D3E51";
+        } else {
+          dots[i].style.backgroundColor = "transparent";
+        }
       }
     }
   }

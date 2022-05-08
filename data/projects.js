@@ -137,8 +137,8 @@ export const GetAllData = () => {
   return projects;
 };
 
-export const GetByCategory = (category) => {
-  console.log(category);
+export const GetByCategory = (category, query) => {
+  console.log(category, query);
   if (category !== "All") {
     let newData = [];
 
@@ -151,8 +151,30 @@ export const GetByCategory = (category) => {
       }
     }
 
-    return newData;
+    if (query == "") {
+      return newData;
+    } else {
+      const foundItems = newData.filter((item) =>
+        item.title
+          .toString()
+          .toLowerCase()
+          .includes(query.toString().toLowerCase())
+      );
+
+      return foundItems;
+    }
   } else {
-    return projects;
+    if (query == "") {
+      return projects;
+    } else {
+      const foundItems = projects.filter((item) =>
+        item.title
+          .toString()
+          .toLowerCase()
+          .includes(query.toString().toLowerCase())
+      );
+
+      return foundItems;
+    }
   }
 };
