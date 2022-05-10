@@ -66,6 +66,7 @@ export const ProjectViewer = () => {
           builtWith={builtWith0}
           link="https://gigawaffle.co.uk"
           ig="gigawaffleuk"
+          readMoreLink="/"
         />
         <Project
           id="project1"
@@ -79,6 +80,7 @@ export const ProjectViewer = () => {
           builtWith={builtWith1}
           link="https://delticbusiness.co.uk"
           ig="delticbusiness"
+          readMoreLink="/"
         />
         <Project
           id="project2"
@@ -92,6 +94,7 @@ export const ProjectViewer = () => {
           ig="wraptor_customs_tuning_wraps"
           builtWith={builtWith2}
           link="/"
+          readMoreLink="/"
         />
         <Project
           id="project3"
@@ -104,6 +107,7 @@ export const ProjectViewer = () => {
           title="Swap My Energy"
           builtWith={builtWith3}
           link="https://swapmyenergy.co.uk"
+          readMoreLink="/"
         />
       </div>
       <div className="flex flex-row mx-auto gap-0.5 w-[83px] mt-2 md:hidden">

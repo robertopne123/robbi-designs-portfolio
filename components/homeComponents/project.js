@@ -82,7 +82,7 @@ export const Project = (props) => {
   }, []);
 
   return (
-    <Link href={props.readMoreLink}>
+    <Link href="/">
       <a>
         <div
           ref={projectRef}
