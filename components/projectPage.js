@@ -10,7 +10,7 @@ export const ProjectPage = (props) => {
           <h1 className="font-roboto text-[200px] text-white font-[900] flex-nowrap uppercase text-center leading-[150px] z-10">
             {props.title}
           </h1>
-          <div className="flex flex-row gap-10 max-w-[300px] absolute left-1/2 -translate-x-1/2 z-0 overflow-x-scroll snap-x snap-mandatory">
+          <div className="flex flex-row gap-10 max-w-[300px] absolute left-1/2 -translate-x-1/2 z-0 overflow-x-scroll snap-x snap-mandatory scrollbar-hide">
             <img
               src="/branding/gigawaffle/applecore.png"
               className="h-[60%] w-[300px] object-contain snap-center"
@@ -53,7 +53,7 @@ export const ProjectPage = (props) => {
             website).
           </p>
         </div>
-        <div className="w-[320px] flex flex-row overflow-x-scroll snap-x snap-mandatory">
+        <div className="w-[320px] flex flex-row overflow-x-scroll snap-x snap-mandatory scrollbar-hide">
           <img
             src="/branding/gigawaffle/content/01.jpg"
             className="h-[400px] ml-auto snap-center"

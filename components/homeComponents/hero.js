@@ -1,6 +1,6 @@
 export const Hero = () => {
   return (
-    <div className="bg-offWhite w-full h-[80vh] relative pt-4 lg:pt-0">
+    <div className="bg-offWhite w-full h-[73vh] relative pt-4 lg:pt-0">
       <div className="max-w-[1250px] mx-auto">
         <img
           src="/projectsBanner.png"
