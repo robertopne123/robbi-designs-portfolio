@@ -51,15 +51,15 @@ export const ProjectViewerLG = () => {
 
   return (
     <div className="flex flex-col justify-end px-4 py-8">
-      <div className="max-w-[1250px] mx-auto w-[1250px]">
+      <div className="max-w-[1250px] mx-auto">
         <h4 className="font-roboto font-bold text-turquoise text-2xl pb-4">
           Projects
         </h4>
         <div className="flex flex-col">
-          <div className="flex flex-row justify-end gap-2 w-full mb-4 px-4">
+          <div className="flex flex-row justify-end gap-2 w-full mb-4">
             <input
               placeholder="Search by project name"
-              className="bg-turquoise outline-none w-[300px] px-2 font-roboto text-white"
+              className="bg-turquoise outline-none sm:max-w-[300px] px-2 font-roboto text-white"
               onChange={(e) => getSearchResult(e)}
             />
             <div
@@ -156,7 +156,7 @@ export const ProjectViewerLG = () => {
         <option className="">Social Media</option>
         <option className="">Other</option>
       </select> */}
-        <div className="w-full flex flex-col md:grid md:grid-cols-3 gap-4">
+        <div className="w-full grid xl:grid-cols-3 md:grid-cols-2 gap-4 max-w-[1250px]">
           {GetByCategory(filterByCategory, query).map((project, index) => (
             <Project
               key={index}
@@ -175,6 +175,7 @@ export const ProjectViewerLG = () => {
                 project.title
               )}
               ig={project.ig}
+              pageLink={project.pageLink}
             />
           ))}
         </div>

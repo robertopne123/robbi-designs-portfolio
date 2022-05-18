@@ -9,6 +9,7 @@ const projects = [
     title: "Gigawaffle",
     logo: "/projectLogos/gigawaffle.png",
     link: "https://gigawaffle.co.uk",
+    pageLink: "/branding/gigawaffle",
     ig: "gigawaffleuk",
   },
   {
@@ -21,6 +22,7 @@ const projects = [
     title: "Deltic Business Solutions",
     logo: "/projectLogos/delticicon.png",
     link: "https://delticbusiness.co.uk",
+    pageLink: "/branding/deltic-business-solutions",
     ig: "delticbusiness",
   },
   {
@@ -33,6 +35,7 @@ const projects = [
     title: "Wraptor Customs",
     logo: "/projectLogos/wraptor.png",
     link: "/",
+    pageLink: "/",
     ig: "wraptor_customs_tuning_wraps",
   },
   {
@@ -45,6 +48,7 @@ const projects = [
     title: "Swap My Energy",
     logo: "/projectLogos/switch.svg",
     link: "https://swapmyenergy.co.uk",
+    pageLink: "/",
     ig: "swapmyenergyuk",
   },
   {
@@ -57,6 +61,7 @@ const projects = [
     title: "The Food Connect",
     logo: "/projectLogos/thefoodconnect.png",
     link: "https://join.thefoodconnect.uk",
+    pageLink: "/",
     ig: "thefoodconnect.uk",
   },
   {
@@ -69,6 +74,7 @@ const projects = [
     title: "Gooey's Cookies",
     logo: "/projectLogos/gooeyscookies.png",
     link: "https://gooeyscookies.co.uk",
+    pageLink: "/",
     ig: "gooeyscookies",
   },
   {
@@ -81,6 +87,7 @@ const projects = [
     title: "We're Digital",
     logo: "/projectLogos/weredigital.png",
     link: "https://weredigital.co",
+    pageLink: "/",
     ig: "weredigital.co",
   },
   {
@@ -93,6 +100,7 @@ const projects = [
     title: "My Cabin Bed",
     logo: "/projectLogos/mycabinbed.png",
     link: "https://mycabinbed.com",
+    pageLink: "/",
     ig: "mycabinbed",
   },
   {
@@ -105,6 +113,7 @@ const projects = [
     title: "Grand Venue",
     logo: "/projectLogos/grandvenue.png",
     link: "https://grandvenue.co",
+    pageLink: "/",
     ig: "grandvenue",
   },
   {
@@ -117,6 +126,7 @@ const projects = [
     title: "Gigawaffle",
     logo: "/projectLogos/gigawaffle.png",
     link: "https://gigawaffle.co.uk",
+    pageLink: "/",
     ig: "gigawaffleuk",
   },
   {
@@ -129,6 +139,7 @@ const projects = [
     title: "Deltic Business Solutions",
     logo: "/projectLogos/delticicon.png",
     link: "https://delticbusiness.co.uk",
+    pageLink: "/",
     ig: "delticbusiness",
   },
 ];

@@ -82,13 +82,23 @@ export const Project = (props) => {
   }, []);
 
   return (
-    <Link href="/">
-      <a>
+    <Link href={props.pageLink == "/" ? "#" : props.pageLink} className="">
+      <a className="">
         <div
           ref={projectRef}
           key={props.index}
-          className={`project snap-center bg-[${props.bgColour}] h-[450px] min-w-full relative rounded-xl p-4 border-2 overflow-clip border-gray-300`}
+          className={`project snap-center bg-[${props.bgColour}] min-h-[450px] xl:w-[90vw] xl:max-w-[400px] max-w-[600px] md:w-[45vw] w-[90vw] mx-auto relative rounded-xl p-4 border-2 overflow-clip border-gray-300`}
         >
+          <div
+            className={`bg-white absolute -right-9 border-t-2 border-b-2 border-turquoise top-3 z-20 py-1 px-8 rotate-45 ${
+              props.pageLink == "/" ? "black" : "hidden"
+            }`}
+          >
+            <p className="font-roboto text-black text-xs uppercase text-center">
+              More Info <br />
+              Coming Soon
+            </p>
+          </div>
           <img
             src={props.image}
             className="absolute left-0 top-0 w-full h-full object-cover"

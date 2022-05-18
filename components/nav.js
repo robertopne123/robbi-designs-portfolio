@@ -19,7 +19,7 @@ export const Nav = () => {
               />
             </a>
           </Link>
-          <div className="group -translate-y-[4px]">
+          <div className="group -translate-y-[4px] cursor-pointer">
             <svg
               width="26"
               height="27"
@@ -80,6 +80,7 @@ export const Nav = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 onClick={() => setMenuVisible(!menuVisible)}
+                className="cursor-pointer"
               >
                 <line
                   x1="4.9038"
