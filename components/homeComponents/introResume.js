@@ -92,7 +92,7 @@ export const IntroResume = () => {
             jobDescription="Creating animated videos from podcast audio ready for YouTube. Animating logo in After Effects as an introduction to the podcast. Editing gaming content ready for YouTube."
           />
         </div>
-        <div className="flex flex-row justify-center gap-10">
+        <div className="flex flex-row justify-center gap-2">
           <Link href="/resume">
             <a>
               <div className="bg-white w-[150px] mx-auto h-[50px] mt-8 flex flex-col justify-center border-2 border-white hover:bg-transparent group">
