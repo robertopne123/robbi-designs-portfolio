@@ -4,7 +4,6 @@ import { Nav } from "../../components/nav";
 import { Contact } from "../../components/homeComponents/contact";
 import { Footer } from "../../components/homeComponents/footer";
 import styles from "../../styles/Home.module.css";
-import { ProjectPage } from "../../components/projectPage";
 
 export default function GigawaffleBranding() {
   let images = [
