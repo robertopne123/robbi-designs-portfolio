@@ -41,6 +41,7 @@ export default function GigawaffleBranding() {
           <div className="flex flex-row gap-16 max-w-[350px] mx-auto lg:translate-x-full mt-10 h-[70%] overflow-x-scroll snap-x snap-mandatory">
             {images.map((image, index) => (
               <img
+                key={index}
                 src={image}
                 className="lg:h-[100%] w-full h-full mx-auto object-contain object-center snap-center"
               />
@@ -54,7 +55,7 @@ export default function GigawaffleBranding() {
             </h4>
             <p className="font-roboto text-white text-sm mt-2 mb-4">
               During my time at Gigawaffle, we decided to work on some new
-              branding, as our previous efforts weren't up to standard. We
+              branding, as our previous efforts weren&apos;t up to standard. We
               lacked consistency and accuracy in our visual identity and brand
               message, which was an issue across all of our digital and physical
               material. This was down to the team not being on the same page in
@@ -115,7 +116,7 @@ export default function GigawaffleBranding() {
                 responsibility. When it came to the previous iterations of our
                 website, we had a lot of people give their own opinion on the
                 design of the website and its content, which resulted in a site
-                that was too bloated and didn't align with any of our other
+                that was too bloated and didn&apos;t align with any of our other
                 digital assets. Therefore, I decided that the design and content
                 decisions would be entirely my decision. To align with our new
                 visual identity, used big and bold headings and vibrant

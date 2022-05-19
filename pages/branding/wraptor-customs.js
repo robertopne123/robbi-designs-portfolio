@@ -40,6 +40,7 @@ export default function WraptorCustoms() {
           <div className="flex flex-row gap-16 max-w-[350px] mx-auto lg:translate-x-full mt-10 h-[70%] -translate-y-16 overflow-x-scroll snap-x snap-mandatory">
             {images.map((image, index) => (
               <img
+                key={index}
                 src={image}
                 className="lg:h-[100%] w-full h-full mx-auto object-contain object-center snap-center"
               />
@@ -53,17 +54,17 @@ export default function WraptorCustoms() {
             </h4>
             <p className="font-roboto text-white text-sm mt-2 mb-4">
               Wraptor Customs were previously with a different agency who were
-              building them a new website and social media, which wasn't going
-              in the creative direction that was best for the business and the
-              client. After joining us, we set out to create some colourful and
-              playful branding, which helped their business stand out from the
-              sea of stealthy and luxury branded car businesses. Since Wraptor
-              started, the founder Dudley Ginn, has always been about breaking
-              away from the norm and creating a business which is vibrant and a
-              bit bonkers! After many conversions with the client, I agreed with
-              the team that really playing into the playful nature of the
-              business in regard to their branding was the best direction to go
-              with. Once we were set on the branding, we got to work on
+              building them a new website and social media, which wasn&apos;t
+              going in the creative direction that was best for the business and
+              the client. After joining us, we set out to create some colourful
+              and playful branding, which helped their business stand out from
+              the sea of stealthy and luxury branded car businesses. Since
+              Wraptor started, the founder Dudley Ginn, has always been about
+              breaking away from the norm and creating a business which is
+              vibrant and a bit bonkers! After many conversions with the client,
+              I agreed with the team that really playing into the playful nature
+              of the business in regard to their branding was the best direction
+              to go with. Once we were set on the branding, we got to work on
               designing the website (both of which I was the design lead on).
             </p>
             <p className="bg-white px-1 text-turquoise text-sm uppercase font-poppins font-light inline">
@@ -81,11 +82,11 @@ export default function WraptorCustoms() {
                 />
               </div>
               <p className="font-roboto text-sm text-white">
-                When making decisions on Wraptors branding, we didn't want to
-                tear everything down and start again. Instead, there were a few
-                parts that we decided to keep and work on, one of the main parts
-                being the rainbow part of their colour scheme. Typically, we
-                would suggest picking only 4/5 colours as part of a colour
+                When making decisions on Wraptors branding, we didn&apos;t want
+                to tear everything down and start again. Instead, there were a
+                few parts that we decided to keep and work on, one of the main
+                parts being the rainbow part of their colour scheme. Typically,
+                we would suggest picking only 4/5 colours as part of a colour
                 scheme to create some strong sense of visual direction, but in
                 this case we felt that the rainbow, mixed with black and white,
                 really allowed for the colours to pop and catch peoples eye. We
@@ -139,16 +140,17 @@ export default function WraptorCustoms() {
                   determining the branding, I also set out how we would layout
                   and design social media content in each type of media. I was
                   also responsible for setting out our video editing process for
-                  Dudley's content so consistency was maintained by every member
-                  of the team.
+                  Dudley&apos;s content so consistency was maintained by every
+                  member of the team.
                   <br />
                   <br />
                   Wraptor Customs has helped us push into realms we previously
-                  hadn't done as a team. They are our first client that wants to
-                  focus on Youtube as a primary social media, hence video
-                  content became really important. A lot of our client typically
-                  go with photo or graphical content, whereas we now had to
-                  create 2-10 minute videos that really captivated the audience.
+                  hadn&apos;t done as a team. They are our first client that
+                  wants to focus on Youtube as a primary social media, hence
+                  video content became really important. A lot of our client
+                  typically go with photo or graphical content, whereas we now
+                  had to create 2-10 minute videos that really captivated the
+                  audience.
                 </p>
               </div>
               <div className="flex flex-col">

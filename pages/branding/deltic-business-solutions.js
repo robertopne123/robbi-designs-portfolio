@@ -38,6 +38,7 @@ export default function DBSBranding() {
           <div className="flex flex-row gap-16 max-w-[350px] mx-auto lg:translate-x-full mt-10 h-[70%] -translate-y-16 overflow-x-scroll snap-x snap-mandatory">
             {images.map((image, index) => (
               <img
+                key={index}
                 src={image}
                 className="lg:h-[100%] w-full h-full mx-auto object-contain object-center snap-center"
               />
@@ -51,10 +52,10 @@ export default function DBSBranding() {
             </h4>
             <p className="font-roboto text-white text-sm mt-2 mb-4">
               Deltic Business Solutions came to us, at Gigawaffle, asking for a
-              website and social media content, but they didn't have a plan on
-              how any of this would look visually. As a new business, they
-              didn't have anything established, so we set on developing a visual
-              identity for them, which would end up being used for their
+              website and social media content, but they didn&apos;t have a plan
+              on how any of this would look visually. As a new business, they
+              didn&apos;t have anything established, so we set on developing a
+              visual identity for them, which would end up being used for their
               website, social media and physical marketing, such as business
               cards and flyers. They ethos was to make running your business a
               simple task, through aiding you with business utilities, insurance
@@ -133,7 +134,7 @@ export default function DBSBranding() {
                   social media. The image provided most of the colour, with a
                   simple message within a green box or circle and the logo in
                   the corner, it tied the social media posts in with the visual
-                  identity we'd established for them.
+                  identity we&apos;d established for them.
                 </p>
               </div>
               <div className="flex flex-col">
