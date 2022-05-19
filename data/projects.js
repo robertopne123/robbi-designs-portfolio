@@ -35,7 +35,7 @@ const projects = [
     title: "Wraptor Customs",
     logo: "/projectLogos/wraptor.png",
     link: "/",
-    pageLink: "/",
+    pageLink: "/branding/wraptor-customs",
     ig: "wraptor_customs_tuning_wraps",
   },
   {

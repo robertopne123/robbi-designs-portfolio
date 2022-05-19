@@ -57,6 +57,7 @@ export const IntroResume = () => {
             companyName="Gigawaffle"
             startDate="Sep 2021"
             endDate="Present"
+            jobDescription="Running the Gigawaffle Marketing, Branding & Marketing team. Looking after clients directly, all the way from conceptualisation, through to launch of their new digital asset(s). Creating branded assets, such as web designs, social media content, graphics, physical marketing material and video content in line with brand guidelines. Building new client websites from scratch, based on our own bespoke designs. Analysing growth opportunities for ourselves and for our clients. Developing brand guidelines for new clients. Building relationships with clients through regular meetings and catch-up calls. Managing client social media accounts, including content posting, hashtag analysis, reports, advertisements, etc. Establishing a company workflow for projects & developing company roadmaps and development opportunities."
           />
           <Job
             companyLogo="/resumeLogos/gigawaffle_logo.jpg"
@@ -64,6 +65,7 @@ export const IntroResume = () => {
             companyName="Gigawaffle"
             startDate="Apr 2021"
             endDate="Sep 2021"
+            jobDescription="Designing internal company website for launch of Gigawaffle. Establishing Gigawaffle’s first set of brand guidelines. Designing internal websites for parent company. Managing and creating content for internal social media accounts. Establishing team communication and project management patterns. Analysing content and advertisement performance."
           />
           <Job
             companyLogo="/resumeLogos/robbi_designs_logo.png"
@@ -71,7 +73,7 @@ export const IntroResume = () => {
             companyName="Robbi Designs"
             startDate="Feb 2020"
             endDate="Apr 2021"
-            jobDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis arcu ut dui scelerisque efficitur. Ut eget nisl vitae nibh congue accumsan. Aenean sodales urna vulputate ullamcorper varius. Praesent et mattis quam, eu hendrerit libero. Phasellus fringilla finibus nisl, ut convallis urna efficitur vitae. Praesent sollicitudin elementum sodales. Fusce vel lacinia est. Sed mattis ex vitae ante fringilla, nec imperdiet nisi pharetra. Proin et diam ac nibh scelerisque eleifend et sit amet felis. Maecenas interdum porttitor pretium. Pellentesque posuere nisl vel venenatis maximus. Fusce quis tincidunt mauris. Etiam risus nisi, porttitor id arcu ac, commodo egestas eros."
+            jobDescription="Working with clients to determine project description, timeframe, budget, etc. Designing music-based graphics for clients based in the UK & US. Developing content for my own social media account. Establishing a visual identity for my work and using this when showing off examples of my work. Developing my own communication skills, especially around the area of design and client work."
           />
           <Job
             companyLogo="/resumeLogos/motivate_logo.png"
@@ -79,7 +81,7 @@ export const IntroResume = () => {
             companyName="Motivate Canvas"
             startDate="Sep 2019"
             endDate="Jan 2020"
-            jobDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis arcu ut dui scelerisque efficitur. Ut eget nisl vitae nibh congue accumsan. Aenean sodales urna vulputate ullamcorper varius. Praesent et mattis quam, eu hendrerit libero. Phasellus fringilla finibus nisl, ut convallis urna efficitur vitae. Praesent sollicitudin elementum sodales. Fusce vel lacinia est. Sed mattis ex vitae ante fringilla, nec imperdiet nisi pharetra. Proin et diam ac nibh scelerisque eleifend et sit amet felis. Maecenas interdum porttitor pretium. Pellentesque posuere nisl vel venenatis maximus. Fusce quis tincidunt mauris. Etiam risus nisi, porttitor id arcu ac, commodo egestas eros."
+            jobDescription="Designing various canvas product lines, ready for print. Creating promotional graphics for seasonal offers, e.g. Black Friday, Cyber Monday & Christmas. Liasing with the social media team in design relevant and engaging content. Creating video content using 3D canvas models and Adobe After Effects. Assisting the web development team in creating web ready graphics."
           />
           <Job
             companyLogo="/resumeLogos/ftf_logo.png"
@@ -87,18 +89,27 @@ export const IntroResume = () => {
             companyName="From The Finney"
             startDate="Aug 2019"
             endDate="Jan 2020"
-            jobDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis arcu ut dui scelerisque efficitur. Ut eget nisl vitae nibh congue accumsan. Aenean sodales urna vulputate ullamcorper varius. Praesent et mattis quam, eu hendrerit libero. Phasellus fringilla finibus nisl, ut convallis urna efficitur vitae. Praesent sollicitudin elementum sodales. Fusce vel lacinia est. Sed mattis ex vitae ante fringilla, nec imperdiet nisi pharetra. Proin et diam ac nibh scelerisque eleifend et sit amet felis. Maecenas interdum porttitor pretium. Pellentesque posuere nisl vel venenatis maximus. Fusce quis tincidunt mauris. Etiam risus nisi, porttitor id arcu ac, commodo egestas eros."
+            jobDescription="Creating animated videos from podcast audio ready for YouTube. Animating logo in After Effects as an introduction to the podcast. Editing gaming content ready for YouTube."
           />
         </div>
-        <Link href="/resume">
-          <a>
-            <div className="bg-white w-[150px] mx-auto h-[50px] mt-8 flex flex-col justify-center">
-              <p className="font-poppins text-turquoise text-sm text-center">
-                View Resume
+        <div className="flex flex-row justify-center gap-10">
+          <Link href="/resume">
+            <a>
+              <div className="bg-white w-[150px] mx-auto h-[50px] mt-8 flex flex-col justify-center border-2 border-white hover:bg-transparent group">
+                <p className="font-poppins text-turquoise text-sm text-center group-hover:text-white">
+                  View Resume
+                </p>
+              </div>
+            </a>
+          </Link>
+          <a href="/cv.pdf" download>
+            <div className="bg-white w-[150px] mx-auto h-[50px] mt-8 flex flex-col justify-center border-2 border-white hover:bg-transparent group">
+              <p className="font-poppins text-turquoise text-sm text-center group-hover:text-white">
+                Download CV
               </p>
             </div>
           </a>
-        </Link>
+        </div>
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ export default function GigawaffleBranding() {
             </p>
           </div>
 
-          <div className="flex flex-row gap-16 max-w-[350px] mx-auto translate-x-full h-[70%] overflow-x-scroll snap-x snap-mandatory">
+          <div className="flex flex-row gap-16 max-w-[350px] mx-auto lg:translate-x-full mt-10 h-[70%] overflow-x-scroll snap-x snap-mandatory">
             {images.map((image, index) => (
               <img
                 src={image}
@@ -84,8 +84,8 @@ export default function GigawaffleBranding() {
             <h3 className="font-roboto text-white text-xl underline decoration-orange pt-4">
               Colours & Typography
             </h3>
-            <div className="flex flex-row gap-10 max-w-[1250px] mx-auto mt-2">
-              <div className="min-w-[45%] w-[45%] ">
+            <div className="flex md:flex-row flex-col gap-10 max-w-[1250px] mx-auto mt-2">
+              <div className="min-w-[45%] md:w-[45%] w-full">
                 <img
                   src="/branding/gigawaffle/colours.png"
                   className="w-[100%] object-contain"
@@ -109,7 +109,7 @@ export default function GigawaffleBranding() {
             <h3 className="font-roboto text-white text-xl underline decoration-orange mt-4">
               Website
             </h3>
-            <div className="flex flex-row gap-10 max-w-[1250px] mx-auto mt-4">
+            <div className="flex md:flex-row flex-col gap-10 max-w-[1250px] mx-auto mt-4">
               <p className="font-roboto text-sm text-white">
                 A major part of the rebranding was the website and that was my
                 responsibility. When it came to the previous iterations of our
@@ -128,9 +128,11 @@ export default function GigawaffleBranding() {
                 approach, where each service got a small description.
                 <br />
                 <br />
-                Scroll down the image to the right for a preview.
+                Scroll down the image to the{" "}
+                <span className="md:inline hidden">right</span>{" "}
+                <span className="inline md:hidden">down</span> for a preview.
               </p>
-              <div className="min-w-[45%] w-[45%] aspect-[937/476] overflow-y-scroll">
+              <div className="min-w-[45%] md:w-[45%] w-full aspect-[937/476] overflow-y-scroll">
                 <img
                   src="/branding/gigawaffle/websitefull.jpg"
                   className="w-[100%]"
@@ -140,7 +142,7 @@ export default function GigawaffleBranding() {
             <h3 className="font-roboto text-white text-xl underline decoration-orange mt-4">
               Social Media
             </h3>
-            <div className="max-w-[1250px] mx-auto flex flex-row gap-10">
+            <div className="max-w-[1250px] mx-auto flex md:flex-row flex-col gap-10">
               <div className="flex flex-col gap-2">
                 <p className="font-roboto text-sm text-white mt-4">
                   When it came to social media, we wanted to create content
@@ -161,81 +163,81 @@ export default function GigawaffleBranding() {
                 <h3 className="font-roboto text-white text-xl underline decoration-orange">
                   Examples of my posts
                 </h3>
-                <div className="flex flex-row gap-4 mt-4">
-                  <div className="w-[240px] min-h-[300px] flex flex-row overflow-x-scroll snap-x snap-mandatory overflow-y-hidden">
+                <div className="flex md:flex-row flex-col mx-auto gap-4 mt-4">
+                  <div className="w-[240px] min-h-[300px] aspect-4/5 flex flex-row overflow-x-scroll snap-x snap-mandatory overflow-y-hidden">
                     <img
                       src="/branding/gigawaffle/content2/01.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content2/02.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content2/03.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content2/04.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content2/05.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content2/06.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content2/07.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content2/08.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content2/09.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                   </div>
-                  <div className="w-[240px] min-h-[300px] flex flex-row overflow-x-scroll snap-x snap-mandatory overflow-y-hidden">
+                  <div className="w-[240px] min-h-[300px] aspect-4/5 flex flex-row overflow-x-scroll snap-x snap-mandatory overflow-y-hidden">
                     <img
                       src="/branding/gigawaffle/content3/01.gif"
-                      className="h-[300px] w-[240px] ml-auto snap-center"
+                      className="h-[300px] w-[240px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content3/02.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content3/03.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content3/04.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content3/05.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content3/06.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content3/07.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content3/08.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                     <img
                       src="/branding/gigawaffle/content3/09.jpg"
-                      className="h-[300px] ml-auto snap-center"
+                      className="h-[300px] ml-auto snap-center aspect-4/5"
                     />
                   </div>
                 </div>

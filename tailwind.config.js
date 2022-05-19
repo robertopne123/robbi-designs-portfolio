@@ -24,6 +24,9 @@ module.exports = {
         xs: { min: "0px", max: "337px" },
         xs2: { min: "337px", max: "387px" },
       },
+      aspectRatio: {
+        "4/5": "4 / 5",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],

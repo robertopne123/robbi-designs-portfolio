@@ -8,7 +8,10 @@ export const Job = (props) => {
   };
 
   return (
-    <div className="pt-4 flex flex-col" onClick={() => setActive(!active)}>
+    <div
+      className="pt-4 flex flex-col cursor-pointer"
+      onClick={() => setActive(!active)}
+    >
       <div className="flex flex-row gap-2">
         <img
           src={props.companyLogo}

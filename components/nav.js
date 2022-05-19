@@ -128,13 +128,6 @@ export const Nav = () => {
                     </p>
                   </a>
                 </Link>
-                <Link href="/contact">
-                  <a>
-                    <p className="text-md font-poppins text-white text-center">
-                      Contact
-                    </p>
-                  </a>
-                </Link>
               </div>
               <img
                 src="/logo.svg"

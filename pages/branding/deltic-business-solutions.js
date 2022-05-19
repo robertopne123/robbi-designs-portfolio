@@ -35,7 +35,7 @@ export default function DBSBranding() {
             </p>
           </div>
 
-          <div className="flex flex-row gap-16 max-w-[350px] mx-auto translate-x-full h-[70%] -translate-y-16 overflow-x-scroll snap-x snap-mandatory">
+          <div className="flex flex-row gap-16 max-w-[350px] mx-auto lg:translate-x-full mt-10 h-[70%] -translate-y-16 overflow-x-scroll snap-x snap-mandatory">
             {images.map((image, index) => (
               <img
                 src={image}
@@ -67,8 +67,8 @@ export default function DBSBranding() {
             <h3 className="font-roboto text-white text-xl underline decoration-orange pt-4">
               Colours & Typography
             </h3>
-            <div className="flex flex-row gap-10 max-w-[1250px] mx-auto mt-2">
-              <div className="min-w-[35%] w-[35%] ">
+            <div className="flex md:flex-row flex-col gap-10 max-w-[1250px] mx-auto mt-2">
+              <div className="min-w-[35%] md:w-[35%] w-full">
                 <img
                   src="/branding/dbs/colours.jpg"
                   className="w-[100%] object-contain"
@@ -96,7 +96,7 @@ export default function DBSBranding() {
             <h3 className="font-roboto text-white text-xl underline decoration-orange mt-4">
               Website
             </h3>
-            <div className="flex flex-row gap-10 max-w-[1250px] mx-auto mt-4">
+            <div className="flex md:flex-row flex-col gap-10 max-w-[1250px] mx-auto mt-4">
               <p className="font-roboto text-sm text-white">
                 The website had to showcase their different services, i.e.
                 insurance, utilities and payments, whilst maintaining
@@ -115,14 +115,14 @@ export default function DBSBranding() {
                 <br />
                 Scroll down the image to the right for a preview.
               </p>
-              <div className="min-w-[45%] w-[45%] aspect-[937/476] overflow-y-scroll">
+              <div className="min-w-[45%] md:w-[45%] w-full aspect-[937/476] overflow-y-scroll">
                 <img src="/branding/dbs/websitefull.jpg" className="w-[100%]" />
               </div>
             </div>
             <h3 className="font-roboto text-white text-xl underline decoration-orange mt-4">
               Social Media
             </h3>
-            <div className="max-w-[1250px] mx-auto flex flex-row gap-10">
+            <div className="max-w-[1250px] mx-auto flex md:flex-row flex-col gap-10">
               <div className="flex flex-col gap-2">
                 <p className="font-roboto text-sm text-white mt-4">
                   When it came to social media, we believed that being strong
@@ -140,7 +140,7 @@ export default function DBSBranding() {
                 <h3 className="font-roboto text-white text-xl underline decoration-orange">
                   Examples of my posts
                 </h3>
-                <div className="flex flex-row gap-4 mt-4">
+                <div className="flex md:flex-row flex-col mx-auto gap-4 mt-4">
                   <div className="w-[240px] h-[240px] flex flex-row">
                     <img
                       src="/branding/dbs/construction.jpg"
