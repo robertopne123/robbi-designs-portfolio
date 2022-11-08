@@ -12,7 +12,6 @@
     "notiflix": "^3.2.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-nextjs-toast": "^1.2.5",
     "react-player": "^2.10.1",
     "tailwind-scrollbar-hide": "^1.1.7",
     "use-dynamic-refs": "^1.0.0"
