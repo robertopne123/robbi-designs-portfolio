@@ -23,7 +23,7 @@ export const ProjectPage = ({
           <div className="grid md:grid-cols-3 gap-4 max-w-[1250px] px-4 mx-auto">
             <div className="md:col-span-2 w-full h-full flex flex-col gap-6">
               {images.map((image, index) => (
-                <div className="relative">
+                <div className="relative" key={index}>
                   <img
                     key={index}
                     src={image.url}
