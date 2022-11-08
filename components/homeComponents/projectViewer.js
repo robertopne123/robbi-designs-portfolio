@@ -58,7 +58,7 @@ export const ProjectViewer = () => {
           id="project0"
           bgColour="#E14985"
           textColour="white"
-          image="/projectCards/gigawaffle.png"
+          image="/projectCards/gigawaffle.jpg"
           projectType="Branding"
           projectPurpose="Complete company rebrand"
           title="Gigawaffle"
@@ -67,22 +67,22 @@ export const ProjectViewer = () => {
           link="https://gigawaffle.co.uk"
           ig="gigawaffleuk"
           readMoreLink="/"
-          pageLink="/branding/gigawaffle"
+          pageLink="/projects/gigawaffle"
         />
         <Project
           id="project1"
           bgColour="#1D1D1D"
           textColour="white"
-          image="/projectCards/delticbusinesssolutions.png"
+          image="/projectCards/bluprint.png"
           projectType="Branding"
-          projectPurpose="New business branding"
-          title="Deltic Business Solutions"
-          logo="/projectLogos/delticicon.png"
+          projectPurpose="Website/Software Design"
+          title="Bluprint"
+          logo="/projectLogos/bluprint.svg"
           builtWith={builtWith1}
-          link="https://delticbusiness.co.uk"
-          ig="delticbusiness"
-          readMoreLink="/"
-          pageLink="/branding/deltic-business-solutions"
+          link="https://bluprint.uk"
+          ig="bluprint.app"
+          readMoreLink="/projects/bluprint"
+          pageLink="/projects/bluprint"
         />
         <Project
           id="project2"
@@ -97,7 +97,7 @@ export const ProjectViewer = () => {
           builtWith={builtWith2}
           link="/"
           readMoreLink="/"
-          pageLink="/branding/wraptor-customs"
+          pageLink="/projects/wraptor-customs"
         />
         <Project
           id="project3"
@@ -111,7 +111,7 @@ export const ProjectViewer = () => {
           builtWith={builtWith3}
           link="https://swapmyenergy.co.uk"
           readMoreLink="/"
-          pageLink="/"
+          pageLink="/projects/swap-my-energy"
         />
       </div>
       <div className="flex flex-row mx-auto gap-0.5 w-[83px] mt-2 md:hidden">

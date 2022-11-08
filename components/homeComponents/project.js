@@ -90,11 +90,11 @@ export const Project = (props) => {
           className={`project snap-center bg-[${props.bgColour}] min-h-[450px] xl:w-[90vw] xl:max-w-[400px] max-w-[600px] md:w-[45vw] w-[90vw] mx-auto relative rounded-xl p-4 border-2 overflow-clip border-gray-300`}
         >
           <div
-            className={`bg-white absolute -right-9 border-t-2 border-b-2 border-turquoise top-3 z-20 py-1 px-8 rotate-45 ${
+            className={`bg-white absolute -right-9 border-t-2 border-b-2 border-turquoise top-4 z-20 py-1 px-8 rotate-45 ${
               props.pageLink == "/" ? "black" : "hidden"
             }`}
           >
-            <p className="font-roboto text-black text-xs uppercase text-center">
+            <p className="font-roboto text-black text-xs uppercase text-center font-[500]">
               More Info <br />
               Coming Soon
             </p>
@@ -131,12 +131,12 @@ export const Project = (props) => {
             className={`absolute flex flex-col left-0 bottom-0 gap-4 px-4 py-4 
         }`}
           >
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-row gap-2">
               <div
                 className="bg-gray-800 w-[30px] h-[30px] rounded-full z-20 cursor-pointer showMoreExtras"
                 onClick={() => topLinkClick(props.ig, props.link)}
               >
-                <div className="h-full w-full flex flex-col justify-center">
+                <div className="h-full w-full flex flex-row justify-center">
                   <img
                     src="/web.png"
                     className={`w-[15px] object-contain mx-auto ${

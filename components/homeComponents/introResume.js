@@ -52,11 +52,18 @@ export const IntroResume = () => {
         <div className="h-px w-full px-4 bg-gray-300 mt-2"></div>
         <div className="mb-4">
           <Job
+            companyLogo="/resumeLogos/p1_logo.jpg"
+            role="Co-Founder"
+            companyName="Priority¹ Studios"
+            startDate="July 2022"
+            endDate="Present"
+          />
+          <Job
             companyLogo="/resumeLogos/gigawaffle_logo.jpg"
             role="Marketing and Development Manager"
             companyName="Gigawaffle"
             startDate="Sep 2021"
-            endDate="Present"
+            endDate="July 2022"
             jobDescription="Running the Gigawaffle Marketing, Branding & Marketing team. Looking after clients directly, all the way from conceptualisation, through to launch of their new digital asset(s). Creating branded assets, such as web designs, social media content, graphics, physical marketing material and video content in line with brand guidelines. Building new client websites from scratch, based on our own bespoke designs. Analysing growth opportunities for ourselves and for our clients. Developing brand guidelines for new clients. Building relationships with clients through regular meetings and catch-up calls. Managing client social media accounts, including content posting, hashtag analysis, reports, advertisements, etc. Establishing a company workflow for projects & developing company roadmaps and development opportunities."
           />
           <Job
