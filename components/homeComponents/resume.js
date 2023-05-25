@@ -50,6 +50,13 @@ export const ResumeSection = () => {
         <div className="h-px w-full px-4 bg-gray-300 mt-2"></div>
         <div className="mb-4">
           <Job
+            companyLogo="/resumeLogos/quirk_logo.jpg"
+            role="Co-Founder"
+            companyName="Quirk. Studio"
+            startDate="July 2022"
+            endDate="Present"
+          />
+          <Job
             companyLogo="/resumeLogos/p1_logo.jpg"
             role="Co-Founder"
             companyName="Priority¹ Studios"
